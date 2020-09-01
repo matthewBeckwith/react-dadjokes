@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 
 const API = 'https://icanhazdadjoke.com/'
 
-export const DadJokesComponent = () => {
+const DadJokesComponent = () => {
   const [id, setId] = React.useState(null)
   const [joke, setJoke] = React.useState(null)
   const [isLoading, setIsLoading] = React.useState(true)
@@ -36,3 +36,5 @@ export const DadJokesComponent = () => {
     return <div className={styles.test}>Loading...</div>
   }
 }
+
+export default DadJokesComponent
