@@ -16,7 +16,6 @@ const DadJokesComponent = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log('data: ', data)
         setId(data.id)
         setJoke(data.joke)
         setIsLoading(false)
