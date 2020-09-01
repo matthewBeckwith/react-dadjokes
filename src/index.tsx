@@ -23,7 +23,7 @@ const DadJokesComponent = () => {
       .catch((err) => {
         console.log('Error: ', err)
       })
-  }, [isLoading])
+  }, [null])
 
   if (!isLoading) {
     return (
